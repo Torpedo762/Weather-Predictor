@@ -1,0 +1,6 @@
+Predictor
+pandas 
+scikit-learn
+tk 
+pillow
+xgboost 
