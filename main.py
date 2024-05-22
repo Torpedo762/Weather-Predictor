@@ -87,7 +87,7 @@ def predict_weather():
 predict_button = tk.Button(root, text="Predict Weather", command=predict_weather)
 predict_button.pack(pady=10)
 
-output_label = tk.Label(root, text="Weather Prediction: ", font=("Arial", 12))
+output_label = tk.Label(root, text="Predicted Weather: ", font=("Arial", 12))
 output_label.pack()
 
 root.mainloop()
