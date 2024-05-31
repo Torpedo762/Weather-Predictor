@@ -22,11 +22,11 @@ image_label.pack(pady=10)
 heading_label = tk.Label(root, text="Weather Predictor", font=("Arial", 18))
 heading_label.pack()
 
-precepetation_label = tk.Label(root, text="Enter Precepetation (%):")
-precepetation_label.pack()
+precipitation_label = tk.Label(root, text="Enter Precipitation (%):")
+precipitation_label.pack()
 
-entry_precepetation = tk.Entry(root)
-entry_precepetation.pack()
+entry_precipitation = tk.Entry(root)
+entry_precipitation.pack()
 
 temp_label = tk.Label(root, text="Enter Temperature (°C):")
 temp_label.pack()
@@ -42,11 +42,11 @@ entry_wind.pack()
 
 
 def predict_weather():
-    precepetation = entry_precepetation.get()
+    precipitation = entry_precipitation.get()
     temperature = entry_temp.get()
     wind = entry_wind.get()
 
-    print(f"Precepetation: {precepetation} %")
+    print(f"precipitation: {precipitation} %")
     print(f"Temperature: {temperature} °C")
     print(f"Wind: {wind} km/h")
 
@@ -57,7 +57,7 @@ def predict_weather():
     y=df.weather
     train_X, test_X, train_y, test_y = train_test_split(X, y)
 
-    x = float(precepetation)
+    x = float(precipitation)
     y = float(temperature)
     z = float(wind)
 
